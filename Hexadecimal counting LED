@@ -1,0 +1,14 @@
+#include<reg51.h>
+#include"delay.c"
+void main()
+{
+//Declaring the variable
+unsigned int x;
+while(1)
+  {
+//Counting 0 to 255 in hexadecimal form
+   for(x=0x00;x<=0xFF;x++){  
+   P1=x;
+   delay(55000);  //delay function used
+}
+ }
