@@ -1,0 +1,12 @@
+#include<reg51.h>
+#include"delay.c"
+void main()
+{
+  while(1) //repeat forever
+ {
+  P1=0x0F;    //0x0F = 11110000
+  delay(55000);     //Using delay function
+  P1=0xF0;    //0xF0 = 00001111
+  delay(55000);
+ }
+}
