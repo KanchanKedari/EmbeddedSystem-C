@@ -1,0 +1,6 @@
+void delay(unsigned int time)
+{
+unsigned int x;
+for(x=0;x<time;x++){}
+ }
+
