@@ -1,0 +1,16 @@
+#include<reg51.h>
+#include"delay.c"
+void main()
+{
+//Declaring the variable
+unsigned int x ;
+
+  while(1) //Repeat Forever
+  {
+P1 = 0xCC; //C -> 1100
+delay(55000);
+P1 = P1>>2;
+delay(55000);
+ }
+
+}
