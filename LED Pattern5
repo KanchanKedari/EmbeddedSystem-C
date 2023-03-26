@@ -1,0 +1,23 @@
+#include<reg51.h>
+#include"delay.c"
+void main()
+{
+//Declaring the variable
+unsigned int x ;
+int y;
+  while(1) //Repeat Forever
+  {
+//Right shift (11010000 -> 00001101)
+   for(x=0xD0  ; x>=0x0D  ; x=x>>1 ){  
+   P1=x;
+   delay(55000);  //delay function used
+}
+//Left Shift (00001101 -> 11010000)
+ for(x=0x0D ; x<=0xD0 ; x=x<<1){  
+   P1=x;
+   delay(55000);  //delay function used
+}
+ }
+
+}
+
